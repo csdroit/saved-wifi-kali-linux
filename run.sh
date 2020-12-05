@@ -10,7 +10,7 @@ saved= ".nmconnections"
 echo -p "Are you shure $wifi is correct ."   
 read -p "press [enter] to continue"
 
-wifi= wifi+saved
+wifi= $wifi+$saved
 cd /etc/NetworkManager/system-connections/
 sudo cat $wifi
 
